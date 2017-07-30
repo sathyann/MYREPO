@@ -14,7 +14,22 @@
     <module>multi-module</module>
     <module>single-module</module>
   </modules>
-
+<profiles>
+</profile>
+        <profile>
+               <id>sonar</id>
+               <activation>
+                      <activeByDefault>true</activeByDefault>
+                      </activation>
+               <properties>
+                      <sonar.host.url>
+                             http://localhost:9000
+                             </sonar.host.url>
+                      </properties>
+         </profile>
+         </profiles>
+         
+         <servers>
   <prerequisites>
     <maven>3.0.3</maven>
   </prerequisites>
